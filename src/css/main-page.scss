@@ -1,0 +1,13 @@
+$bg-img: url('../../public/images/first-section/background.jpg');
+$transparent-left-img: url('../../public/images/first-section/transparent-image-1.png');
+$transparent-right-img: url('../../public/images/first-section/transparent-image-2.png');
+
+
+
+.center-page{
+  background-image:$transparent-left-img, $transparent-right-img, $bg-img;
+  background-position: 20% bottom, 80% bottom , left;
+  background-repeat: no-repeat;
+  height:626px;
+  max-width:100%;
+}
