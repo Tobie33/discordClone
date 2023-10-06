@@ -1,6 +1,7 @@
 $bg-img: url('../../public/images/first-section/background.jpg');
 $transparent-left-img: url('../../public/images/first-section/transparent-image-1.png');
 $transparent-right-img: url('../../public/images/first-section/transparent-image-2.png');
+$join-dc-img: url('../../public/images/joinDiscord.png');
 
 
 
@@ -10,4 +11,49 @@ $transparent-right-img: url('../../public/images/first-section/transparent-image
   background-repeat: no-repeat;
   height:626px;
   max-width:100%;
+}
+
+
+
+.ordinary-sections {
+  height: 680px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .pics-and-paragraph {
+    width: 1260px;
+
+    .sections-paragraph {
+      width: 380px;
+      height: 440px;
+      margin-left: 100px;
+
+      .paragraph-topic {
+        font-size: 48px;
+      }
+
+      .paragraph {
+        font-size: 18px;
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+.big-central-section{
+  height:900px;
+  .big-central-pics-and-paragraph{
+    padding: 120px 40px 80px;
+    .big-central-paragraph{
+      width:980px;
+    }
+  }
+}
+
+.join-discord{
+  background-image: $join-dc-img;
+  background-repeat: no-repeat;
+  background-position: top;
+  height:280px;
 }
