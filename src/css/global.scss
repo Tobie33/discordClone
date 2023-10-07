@@ -1,0 +1,31 @@
+footer{
+  height:600px;
+  display:flex;
+  justify-content: center;
+  background-color: #23272A;
+  #footer-box{
+    width:1260px;
+    color: white;
+    height: 100%;
+    padding: 80px 0 60px;
+    #dropup-avatars-navs{
+      height:75%;
+      #dropup-and-avatars{
+        width:280px;
+        height:100%;
+      }
+      #footer-navs{
+        width:720px;
+        height:100%;
+        .footer-nav-cats{
+          width:25%;
+        }
+      }
+    }
+    #open-discord-section {
+      border-top: #5865f2 solid 1px;
+      height: 25%;
+      width: 100%;
+    }
+  }
+}
