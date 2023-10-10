@@ -1,5 +1,5 @@
 footer{
-  height:600px;
+  height:625px;
   display:flex;
   justify-content: center;
   background-color: #23272A;
@@ -7,25 +7,50 @@ footer{
     width:1260px;
     color: white;
     height: 100%;
-    padding: 80px 0 60px;
+    padding: 80px 40px 60px;
     #dropup-avatars-navs{
-      height:75%;
+      height:550px;
       #dropup-and-avatars{
         width:280px;
         height:100%;
       }
       #footer-navs{
-        width:720px;
         height:100%;
         .footer-nav-cats{
-          width:25%;
+          height:100%;
+          .footer-nav-cat-name{
+            margin-bottom: 20px;
+            color:#5865f2;
+          }
+          .footer-nav-link{
+            text-decoration: none;
+            color:white;
+          }
+        }
+        .navs-separation{
+          margin-left:100px;
+        }
+        #last-nav{
+          margin-left: 65px;
         }
       }
     }
     #open-discord-section {
       border-top: #5865f2 solid 1px;
-      height: 25%;
       width: 100%;
+      #footer-logo{
+        width:100%;
+        #open-discord-button{
+          font-size: 14px;
+          padding: 7px 16px;
+          line-height: 24px;
+          font-weight: 500;
+          background-color: #5865f2;
+          border:0;
+          float:right;
+          margin-top:15px;
+        }
+      }
     }
   }
 }

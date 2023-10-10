@@ -31,53 +31,55 @@ const DiscordFooter = () => {
           <div id="footer-navs" className='d-flex'>
             <nav className='footer-nav-cats d-flex flex-column'>
               <h6 className='footer-nav-cat-name'>Product</h6>
-                <Link href="#">Download</Link>
-                <Link href="#">Nitro</Link>
-                <Link href="#">Status</Link>
-                <Link href="#">App Directory</Link>
+                <Link href="#" className='footer-nav-link'>Download</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Nitro</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Status</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>App Directory</Link>
             </nav>
-            <nav className='footer-nav-cats d-flex flex-column'>
+            <nav className='footer-nav-cats d-flex flex-column navs-separation'>
               <h6 className='footer-nav-cat-name'>Company</h6>
-                <Link href="#">About</Link>
-                <Link href="#">Jobs</Link>
-                <Link href="#">Brand</Link>
-                <Link href="#">Newsroom</Link>
+                <Link href="#" className='footer-nav-link'>About</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Jobs</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Brand</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Newsroom</Link>
             </nav>
-            <nav className='footer-nav-cats d-flex flex-column'>
+            <nav className='footer-nav-cats d-flex flex-column navs-separation'>
               <h6 className='footer-nav-cat-name'>Resources</h6>
-                <Link href="#">College</Link>
-                <Link href="#">Support</Link>
-                <Link href="#">Safety</Link>
-                <Link href="#">Blog</Link>
-                <Link href="#">Feedback</Link>
-                <Link href="#">Developers</Link>
-                <Link href="#">StreamKit</Link>
-                <Link href="#">Creators</Link>
-                <Link href="#">Community</Link>
-                <Link href="#">Official 3rd Party Merch</Link>
+                <Link href="#" className='footer-nav-link'>College</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Support</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Safety</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Blog</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Feedback</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Developers</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>StreamKit</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Creators</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Community</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Official 3rd Party Merch</Link>
             </nav>
-            <nav className='footer-nav-cats d-flex flex-column'>
+            <nav className='footer-nav-cats d-flex flex-column' id="last-nav">
               <h6 className='footer-nav-cat-name'>Policies</h6>
-                <Link href="#">Terms</Link>
-                <Link href="#">Privacy</Link>
-                <Link href="#">Cookie Settings</Link>
-                <Link href="#">Guidelines</Link>
-                <Link href="#">Acknowledgements</Link>
-                <Link href="#">Licenses</Link>
-                <Link href="#">Company Information</Link>
+                <Link href="#" className='footer-nav-link'>Terms</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Privacy</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Cookie Settings</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Guidelines</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Acknowledgements</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Licenses</Link>
+                <Link href="#" className='mt-2 footer-nav-link'>Company Information</Link>
             </nav>
           </div>
         </div>
-        <div id="open-discord-section" className='d-flex justify-content-between'>
-          <Image
-            src={discordLogo}
-            width={124}
-            height={34}
-            href="#"
-            alt="discord logo"
-          >
-          </Image>
-          <Button>Open Discord</Button>
+        <div id="open-discord-section">
+          <div id="footer-logo" className='mt-3'>
+            <Image
+              src={discordLogo}
+              width={124}
+              height={68}
+              href="#"
+              alt="discord logo"
+            >
+            </Image>
+            <Button id="open-discord-button">Open Discord</Button>
+          </div>
         </div>
       </div>
     </footer>

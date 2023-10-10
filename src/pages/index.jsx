@@ -1,4 +1,4 @@
-import Section from "@/Components/Sections"
+import NavbarAndFrontSection from "@/Components/NavbarAndFrontSection"
 import firstOrdPic from "../../public/images/ordinary-sections/firstOrdPic.png"
 import secondOrdPic from "../../public/images/ordinary-sections/secondOrdPic.png"
 import thirdOrdPic from "../../public/images/ordinary-sections/thirdOrdPic.png"
@@ -9,7 +9,7 @@ import Button from "react-bootstrap/Button"
 export default function MainPage(){
   return (
     <>
-      <Section />
+      <NavbarAndFrontSection />
       <section className="ordinary-sections">
         <div className="pics-and-paragraph d-flex">
           <Image
@@ -23,7 +23,7 @@ export default function MainPage(){
           </div>
         </div>
       </section>
-      <section className="ordinary-sections">
+      <section className="ordinary-sections even-section">
         <div className="pics-and-paragraph d-flex">
           <div className="sections-paragraph d-flex flex-column justify-content-center">
             <h2 className="paragraph-topic">Where hanging out is easy</h2>
@@ -49,7 +49,7 @@ export default function MainPage(){
           </div>
         </div>
       </section>
-      <section className="big-central-section">
+      <section className="big-central-section even-section">
         <div className="big-central-pics-and-paragraph d-flex flex-column align-items-center">
           <div className="big-central-paragraph text-center">
             <h2 className="paragraph-topic">RELIABLE TECH FOR STAYING CLOSE</h2>
@@ -63,8 +63,8 @@ export default function MainPage(){
         </div>
       </section>
       <div className="join-discord d-flex flex-column align-items-center">
-        <h2 className="  text-center">Ready to start your journey?</h2>
-        <Button>Download for Windows</Button>
+        <h2 className="text-center mt-3">Ready to start your journey?</h2>
+        <Button id="download-discord-button" className="mt-5">Download for Windows</Button>
       </div>
 
     </>
