@@ -63,7 +63,7 @@ export default function MainPage(){
         </div>
       </section>
       <div className="join-discord d-flex flex-column align-items-center">
-        <h2 className="text-center mt-3">Ready to start your journey?</h2>
+        <h2 className="text-center mt-3 fw-bold">Ready to start your journey?</h2>
         <Button id="download-discord-button" className="mt-5">Download for Windows</Button>
       </div>
 

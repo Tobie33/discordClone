@@ -5,9 +5,38 @@ import Link from 'next/link';
 import Image from "next/image"
 import discordLogo from "../../public/images/discordLogo.png"
 import Button  from 'react-bootstrap/Button';
+import { useState } from 'react';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faSquareFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const DiscordFooter = () => {
+  const [selectedLanguage, setSelectedLanguage] = useState('English')
+
+  const languages =
+  ['Dansk',
+  'Deutsch',
+  'English, USA',
+  'Suomi',
+  'Hrvatski',
+  'Magyar',
+  'Italiano',
+  'Lietuvisikai',
+  'Nederlands',
+  'Norwegian',
+  'Polski',
+  'Portugues do Brasil',
+  'Romana',
+  'Pyccknn',
+  'Svenska',
+  'Turkce',
+  'Teing Viet',
+  ]
+
   return (
     <footer>
       <div id="footer-box" className='d-flex flex-column justify-content-between'>
@@ -18,15 +47,21 @@ const DiscordFooter = () => {
               key="up"
               id="dropup"
               drop="up"
-              variant="secondary"
-              title="Drop up"
+              variant="none"
+              title={selectedLanguage}
+              onSelect={(e,eventKey) => setSelectedLanguage(e)}
             >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+            {languages.map((language,index) =>
+              <Dropdown.Item key={index} eventKey={language}>{language}</Dropdown.Item>
+            )}
             </DropdownButton>
+            <div id="avatars" className='mt-5 d-flex justify-content-evenly'>
+              <FontAwesomeIcon icon={faTwitter} size="xl" style={{color: "#ffffff",}} />
+              <FontAwesomeIcon icon={faInstagram} size="xl" style={{color: "#ffffff",}} />
+              <FontAwesomeIcon icon={faSquareFacebook} size="xl" style={{color: "#ffffff",}} />
+              <FontAwesomeIcon icon={faYoutube} size="xl" style={{color: "#ffffff",}} />
+              <FontAwesomeIcon icon={faTiktok} size="xl" style={{color: "#ffffff",}} />
+            </div>
           </div>
           <div id="footer-navs" className='d-flex'>
             <nav className='footer-nav-cats d-flex flex-column'>
