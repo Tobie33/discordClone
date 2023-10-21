@@ -11,7 +11,7 @@ export default function MainPage(){
     <>
       <NavbarAndFrontSection />
       <section className="ordinary-sections">
-        <div className="pics-and-paragraph d-flex">
+        <div className="pics-and-paragraph d-flex fade-in">
           <Image
             src={firstOrdPic}
             alt="firstOrdPic"
