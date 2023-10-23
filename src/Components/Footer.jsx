@@ -12,30 +12,13 @@ import { faSquareFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import languages from '@/data/languageSelection';
+import USA from '../../public/images/flags/USA.png'
 
 
 const DiscordFooter = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState('English')
-
-  const languages =
-  ['Dansk',
-  'Deutsch',
-  'English, USA',
-  'Suomi',
-  'Hrvatski',
-  'Magyar',
-  'Italiano',
-  'Lietuvisikai',
-  'Nederlands',
-  'Norwegian',
-  'Polski',
-  'Portugues do Brasil',
-  'Romana',
-  'Pyccknn',
-  'Svenska',
-  'Turkce',
-  'Teing Viet',
-  ]
+  const [selectedLanguage, setSelectedLanguage] = useState('English, USA')
+  const [selectedLanguageFlag, setSelectedLanguageFlag] = useState(USA.src)
 
   return (
     <footer>
@@ -47,12 +30,29 @@ const DiscordFooter = () => {
               key="up"
               id="dropup"
               drop="up"
-              variant="none"
-              title={selectedLanguage}
-              onSelect={(e,eventKey) => setSelectedLanguage(e)}
+              variant="transparent"
+              title={<div className='d-flex align-items-center'><Image src={selectedLanguageFlag} width={24} height={16} alt="flag"></Image><h6 className='my-0 mx-2'>{selectedLanguage}</h6></div>}
+              onSelect={(e) => {
+                const a = e.split(',')
+                const newSelectedLanguage = a[0]
+                const newSelectedLanguageFlag = a[1].trim()
+
+                setSelectedLanguage(newSelectedLanguage)
+                setSelectedLanguageFlag(newSelectedLanguageFlag)
+
+                  }}
             >
-            {languages.map((language,index) =>
-              <Dropdown.Item key={index} eventKey={language}>{language}</Dropdown.Item>
+            {languages.map((country,index) => {
+            const flag = country.flag
+            const language = country.language
+
+            return (
+              <div className='d-flex language-choice' key={index}>
+                <Image src={flag.src} width={24} height={16} alt="flag" className='mx-2 mt-1'></Image>
+                <Dropdown.Item key={index} eventKey={`${language}, ${flag.src}`} className='p-0 mb-3'>{language}</Dropdown.Item>
+              </div>
+            )
+            }
             )}
             </DropdownButton>
             <div id="avatars" className='mt-5 d-flex justify-content-evenly'>

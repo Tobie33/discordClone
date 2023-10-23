@@ -13,6 +13,19 @@ footer{
       #dropup-and-avatars{
         width:280px;
         height:100%;
+        #dropup{
+          color:white;
+          display: flex;
+          align-items: center;
+        }
+        .dropdown-menu{
+          max-height: 300px;
+          overflow: auto;
+          .dropdown-item {
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
       }
       #footer-navs{
         height:100%;

@@ -19,6 +19,7 @@
     "react": "latest",
     "react-bootstrap": "^2.9.0",
     "react-dom": "latest",
+    "react-fade-in": "^2.0.1",
     "sass": "^1.68.0"
   },
   "devDependencies": {

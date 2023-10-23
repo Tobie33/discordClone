@@ -1,7 +1,7 @@
-$bg-img: url('../../public/images/first-section/background.png');
-$transparent-left-img: url('../../public/images/first-section/transparent-image-1.png');
-$transparent-right-img: url('../../public/images/first-section/transparent-image-2.png');
-$join-dc-img: url('../../public/images/joinDiscord.png');
+$bg-img: url('../../public/images/front-section-background-pics/background.png');
+$transparent-left-img: url('../../public/images/front-section-background-pics/transparent-image-1.png');
+$transparent-right-img: url('../../public/images/front-section-background-pics/transparent-image-2.png');
+$join-dc-img: url('../../public/images/sections-pics/joinDiscord.png');
 
 .even-section{
   background-color: #f6f6f6;
@@ -50,6 +50,7 @@ $join-dc-img: url('../../public/images/joinDiscord.png');
 
       .paragraph-topic {
         font-size: 48px;
+        font-weight: bold;
       }
 
       .paragraph {
@@ -62,6 +63,7 @@ $join-dc-img: url('../../public/images/joinDiscord.png');
 
 .big-central-section{
   height:900px;
+  background: linear-gradient(#f6f6f6, #FFFFFF);
   .big-central-pics-and-paragraph{
     padding: 120px 40px 80px;
     .big-central-paragraph{
