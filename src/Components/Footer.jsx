@@ -59,10 +59,10 @@ const DiscordFooter = () => {
             )}
             </DropdownButton>
             <div id="avatars" className='mt-5'>
-              <FontAwesomeIcon icon={faTwitter} size="xl" style={{color: "#ffffff",}} className='me-3' />
-              <FontAwesomeIcon icon={faInstagram} size="xl" style={{color: "#ffffff",}} className='me-3'/>
-              <FontAwesomeIcon icon={faSquareFacebook} size="xl" style={{color: "#ffffff",}} className='me-3'/>
-              <FontAwesomeIcon icon={faYoutube} size="xl" style={{color: "#ffffff",}} className='me-3'/>
+              <FontAwesomeIcon icon={faTwitter} size="xl" style={{color: "#ffffff",}} className='me-4' />
+              <FontAwesomeIcon icon={faInstagram} size="xl" style={{color: "#ffffff",}} className='me-4'/>
+              <FontAwesomeIcon icon={faSquareFacebook} size="xl" style={{color: "#ffffff",}} className='me-4'/>
+              <FontAwesomeIcon icon={faYoutube} size="xl" style={{color: "#ffffff",}} className='me-4'/>
               <FontAwesomeIcon icon={faTiktok} size="xl" style={{color: "#ffffff",}}/>
             </div>
           </div>
