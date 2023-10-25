@@ -1,3 +1,8 @@
+body{
+  font-family: 'gg sans';
+}
+
+
 footer{
   height:625px;
   display:flex;
@@ -17,6 +22,8 @@ footer{
           color:white;
           display: flex;
           align-items: center;
+          padding-left: 0;
+          border: none;
         }
         .dropdown-menu{
           max-height: 300px;
@@ -24,6 +31,10 @@ footer{
           .dropdown-item {
             font-size: 14px;
             line-height: 18px;
+            word-wrap: break-word;
+          }
+          #flag-28{
+            margin-bottom: 0;
           }
         }
       }

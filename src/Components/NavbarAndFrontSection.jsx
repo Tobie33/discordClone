@@ -4,7 +4,8 @@ import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import Image from 'next/image';
 import discordLogo from "../../public/images/discordLogo.png"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons"
 
 const NavbarAndFrontSection = () => {
   return (
@@ -38,7 +39,7 @@ const NavbarAndFrontSection = () => {
             <h1 id="front-slogan">IMAGINE A PLACE...</h1>
             <p id="front-paragraph">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
             <div id="front-buttons" className='d-flex justify-content-evenly'>
-              <Button variant='light' className='front-buttons'>Download for Windows</Button>
+              <Button variant='light' className='front-buttons'><FontAwesomeIcon icon={faArrowDownLong} style={{color: "#000000",}} size="sm" className="me-2"/>Download for Windows</Button>
               <Button variant='dark' className='front-buttons'>Open Discord in your browser</Button>
             </div>
           </div>

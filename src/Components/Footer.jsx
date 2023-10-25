@@ -41,6 +41,7 @@ const DiscordFooter = () => {
                 setSelectedLanguageFlag(newSelectedLanguageFlag)
 
                   }}
+              className='ms-0'
             >
             {languages.map((country,index) => {
             const flag = country.flag
@@ -48,19 +49,21 @@ const DiscordFooter = () => {
 
             return (
               <div className='d-flex language-choice' key={index}>
-                <Image src={flag.src} width={24} height={16} alt="flag" className='mx-2 mt-1'></Image>
-                <Dropdown.Item key={index} eventKey={`${language}, ${flag.src}`} className='p-0 mb-3'>{language}</Dropdown.Item>
+                <Dropdown.Item id={`flag-${index}`} key={index} eventKey={`${language}, ${flag.src}`} className='p-0 mb-2'>
+                  <Image src={flag.src} width={24} height={16} alt="flag" className='m-2'></Image>
+                  {language}
+                </Dropdown.Item>
               </div>
             )
             }
             )}
             </DropdownButton>
-            <div id="avatars" className='mt-5 d-flex justify-content-evenly'>
-              <FontAwesomeIcon icon={faTwitter} size="xl" style={{color: "#ffffff",}} />
-              <FontAwesomeIcon icon={faInstagram} size="xl" style={{color: "#ffffff",}} />
-              <FontAwesomeIcon icon={faSquareFacebook} size="xl" style={{color: "#ffffff",}} />
-              <FontAwesomeIcon icon={faYoutube} size="xl" style={{color: "#ffffff",}} />
-              <FontAwesomeIcon icon={faTiktok} size="xl" style={{color: "#ffffff",}} />
+            <div id="avatars" className='mt-5'>
+              <FontAwesomeIcon icon={faTwitter} size="xl" style={{color: "#ffffff",}} className='me-3' />
+              <FontAwesomeIcon icon={faInstagram} size="xl" style={{color: "#ffffff",}} className='me-3'/>
+              <FontAwesomeIcon icon={faSquareFacebook} size="xl" style={{color: "#ffffff",}} className='me-3'/>
+              <FontAwesomeIcon icon={faYoutube} size="xl" style={{color: "#ffffff",}} className='me-3'/>
+              <FontAwesomeIcon icon={faTiktok} size="xl" style={{color: "#ffffff",}}/>
             </div>
           </div>
           <div id="footer-navs" className='d-flex'>
